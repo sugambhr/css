@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Element</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* p::first-letter{
+            font-size: 50px;
+            color: darkcyan;
+        }
+        p::first-line{
+            font-size: 25px;
+            color: royalblue;
+        }
+        p::selection{ only p tag } */
+
+        ::selection{
+            background-color: aquamarine;
+        }
+        p:hover:before{
+            content: '';
+            font-size: 60px;
+            background-color: royalblue;
+            display: block;
+            width: 60%;
+            height: 10px;
+            margin: auto;
+        }
+        p:hover:after{
+            content: '';
+            font-size: 60px;
+            background-color: royalblue;
+            color: black;
+            display: block;
+            width: 60%;
+            height: 10px;
+            margin: auto;
+        }
+        p{
+            text-align: center;
+            font-size: 50px;
+            text-shadow: -1px -1px 10px rgb(103, 100, 100), 1px 1px 10px rgb(212, 78, 78);
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <p>SugamBohara</p>
+    <br>
+    <pre>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, in unde dicta, doloremque nesciunt laudantium molestias dolorum quas dolores nam corrupti debitis illum assumenda cumque nulla delectus odio 
+        sint possimus?
+    </pre>
+</body>
+</html>

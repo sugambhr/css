@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .box{
+            width: 400px;
+            height: 200px;
+            margin: 10px auto;
+            border: 3px solid yellow;
+            background-color: darkcyan;
+        }
+        .demo{
+            width: 100px;
+            height: 100px;
+            background-color: royalblue;
+            transform: scale(1.5);
+            transition: all 2s;
+        }
+        .demo:hover{
+            transform: rotate(180deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="demo"></div>
+    </div>
+</body>
+</html>

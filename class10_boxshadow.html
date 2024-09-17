@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Shadow</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .box{
+            width: 400px;
+            height: 200px;
+            background-color: darkcyan;
+            margin: 10px auto;
+            box-shadow: 1px 1px 50px rgba(0, 0, 0, 0.5);
+            background-image: url(img/12.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+        .box:hover{
+            box-shadow: 1px 1px 50px rgba(0, 0, 0, 0.5),  -1px -1px 50px rgba(0, 0, 0, 0.5);
+        }
+        .box p{
+            text-align: center;
+            padding-top: 20px;
+            color: rgb(5, 21, 249);
+            font-size: 20px;
+            font-weight: 500;
+            text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+        }
+        p{
+            font-size: 50px;
+            text-shadow: 5px 5px 5px rgba(89, 255, 0, 0.5),-5px -5px 5px rgba(255, 7, 7, 0.5);
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <p>StrawHat</p>
+    </div>
+    <p>StrawHatPirates</p>
+</body>
+</html>

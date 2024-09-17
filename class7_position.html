@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .container{
+        position: relative;
+    }
+    .box{
+        width: 400px;
+        height: 200px;
+        background-color: darkgoldenrod;
+        position: relative;
+        bottom: 40px;
+    }
+    #demo{
+        width: 400px;
+        height: 200px;
+        background-color: darkred;
+        position: absolute;
+        top: 10px;
+        right: 0;
+    }
+</style>
+<body>
+    <pre>There are five types of position. They are
+        i>Static Position : by default
+        ii>Relative Position : move according to its own original position.
+        iii>Absolute Position : move according to its parent of parent is not mentioned it moves according to body.
+        iv>Fixed Position : move according to body and have its fixed define position.
+        v>Sticky Position : move according to body and stick after the define position meets
+    </pre>
+    <div class="container">
+        <div class="box"></div>
+        <div id="demo"></div>
+    </div>
+</body>
+</html>

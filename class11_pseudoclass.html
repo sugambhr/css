@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Class</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        table,td,th{
+            border: 1px solid black;
+            border-collapse: collapse;
+            width: 100px;
+        }
+        table{
+            margin: 10px auto;
+        }
+        th,td{
+            padding: 10px 20px;
+            width: 150px;
+            text-align: center;
+        }
+        td:hover{
+            background-color: royalblue;
+        }
+        th:first-child{
+            background-color: blueviolet;
+            color: white;
+        }
+        
+        th:last-child{
+            background-color: blueviolet;
+            color: white;
+        }
+        tr:nth-child(3){
+            background-color: darkblue;
+            color: white;
+        }
+        tr:nth-child(5){
+            background-color: darkblue;
+            color: white;
+        }
+        tr:nth-child(7){
+            background-color: darkblue;
+            color: white;
+        }
+        th:nth-child(3){
+            background-color: blueviolet;
+            color: white;
+        }
+        th:nth-child(5){
+            background-color: blueviolet;
+            color: white;
+        }
+        th:nth-child(2n){
+            background-color: brown;
+            color: white;
+        }
+        th:nth-child(2n):hover{
+            background-color: aquamarine;
+            color: red;
+        }
+        tr:nth-child(2n){
+            background-color: royalblue;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <th class="name" colspan="2">Name</th>
+            <th rowspan="2">Email</th>
+            <th rowspan="2">Contact No</th>
+            <th colspan="2">Address</th>
+            <th rowspan="2">Education</th>
+            <th rowspan="2">Gender</th>
+            <th rowspan="2">Occupation</th>
+        </tr>
+        <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Parmanent Address</th>
+            <th>Temporary Address</th>
+        </tr>
+        <tr>
+            <td class="name">Sugam</td>
+            <td class="name">Bohara</td>
+            <td>sugambohara.official@gmail.com</td>
+            <td>9865191118</td>
+            <td colspan="2">Kathmandu</td>
+            <td>Bachelor's Degree</td>
+            <td>Male</td>
+            <td>Student</td>
+        </tr>
+        <tr>
+            <td class="name">Sugam</td>
+            <td class="name">Bohara</td>
+            <td>sugambohara.official@gmail.com</td>
+            <td>9865191118</td>
+            <td colspan="2">Kathmandu</td>
+            <td>Bachelor's Degree</td>
+            <td>Male</td>
+            <td>Student</td>
+        </tr>
+        <tr>
+            <td class="name">Sugam</td>
+            <td class="name">Bohara</td>
+            <td>sugambohara.official@gmail.com</td>
+            <td>9865191118</td>
+            <td colspan="2">Kathmandu</td>
+            <td>Bachelor's Degree</td>
+            <td>Male</td>
+            <td>Student</td>
+        </tr>
+        <tr>
+            <td class="name">Sugam</td>
+            <td class="name">Bohara</td>
+            <td>sugambohara.official@gmail.com</td>
+            <td>9865191118</td>
+            <td colspan="2">Kathmandu</td>
+            <td>Bachelor's Degree</td>
+            <td>Male</td>
+            <td>Student</td>
+        </tr>
+        <tr>
+            <td class="name">Sugam</td>
+            <td class="name">Bohara</td>
+            <td>sugambohara.official@gmail.com</td>
+            <td>9865191118</td>
+            <td colspan="2">Kathmandu</td>
+            <td>Bachelor's Degree</td>
+            <td>Male</td>
+            <td>Student</td>
+        </tr>
+    </table>
+</body>
+</html>
